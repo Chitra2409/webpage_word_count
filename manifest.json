@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Word & Reading Time Estimator",
+  "version": "1.0",
+  "description": "Counts words on the current page and shows estimated reading time.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Reading Time"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
