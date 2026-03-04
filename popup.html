@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reading Time</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      width: 220px;
+      padding: 16px;
+      margin: 0;
+      background: #1e1e2e;
+      color: #cdd6f4;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      color: #89b4fa;
+    }
+    .stat {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .value {
+      font-weight: bold;
+      color: #a6e3a1;
+    }
+    #error {
+      color: #f38ba8;
+      font-size: 13px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Reading Time Estimator</h2>
+  <div class="stat">
+    <span>Word Count</span>
+    <span class="value" id="wordCount">—</span>
+  </div>
+  <div class="stat">
+    <span>Reading Time</span>
+    <span class="value" id="readingTime">—</span>
+  </div>
+  <p id="error">Could not read this page.</p>
+  <script src="popup.js"></script>
+</body>
+</html>
